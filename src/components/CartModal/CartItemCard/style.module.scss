@@ -1,0 +1,50 @@
+.container {
+    width: 94.63%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: white;
+
+    .listItem {
+        display: flex;
+        flex-direction: row;
+        gap: .625rem;
+        background-color: white;
+
+        div {
+            width: 5.1413rem;
+            height: 5rem;
+            border-radius: .3125rem;
+            background: rgba(224, 224, 224, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 3.4375rem;
+                height: 3.4375rem;
+            }
+        }
+
+        h3 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            font-family: var(--font);
+            color: var(--grey600);
+        }
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        color: rgba(189, 189, 189, 1);
+        font-size: 1.125rem;
+        font-weight: 900;
+
+        &:hover {
+            color: var(--grey300);
+        }
+    }
+}

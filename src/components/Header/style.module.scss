@@ -1,0 +1,123 @@
+.container {
+    width: 100vw;
+    background-color: var(--grey100);
+
+    div {
+        width: clamp(18.75rem, 85.5rem, 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: .9375rem;
+        padding-bottom: .9375rem;
+
+        @media(min-width: 46.875rem) {
+            width: clamp(18.75rem, 85.5rem, 100%);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .logoDiv {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                width: 9.375rem;
+                height: 1.4281rem;
+                padding-left: .625rem;
+            }
+
+            .cardBttn {
+                position: relative;
+                width: 3.125rem;
+                height: 3.125rem;
+                background-color: transparent;
+                border: none;
+                color: rgba(189, 189, 189, 1);
+
+                &:hover {
+                    color: var(--grey300)
+                }
+
+                span {
+                    position: absolute;
+                    top: .125rem;
+                    left: 1.5625rem;
+                    width: 1.125rem;
+                    height: 1.125rem;
+                    background-color: var(--color-primary);
+                    border-radius: .4375rem;
+                    color: var(--grey0);
+                    font-size: .75rem;
+                    font-weight: 900;
+                }
+            }
+        }
+
+        .formSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: clamp(15.625rem, 23.875rem, 95%);
+
+            form {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: clamp(15.625rem, 23.875rem, 95%);
+                height: 3.75rem;
+                border: .125rem solid rgba(224, 224, 224, 1);
+                border-radius: .5rem;
+                background-color: var(--grey0);
+
+                &:hover,
+                &:focus {
+                    border: .125rem solid var(--grey600);
+                }
+
+                input {
+                    width: clamp(13.75rem, 20.625rem, 15.625rem);
+                    height: 3.4375rem;
+                    border: none;
+                    margin-left: .625rem;
+                    background-color: var(--grey0);
+                    font-family: var(--font);
+                    font-size: 1rem;
+                    font-weight: 400;
+                    border: none;
+
+                    &::placeholder {
+                        color: var(--grey100);
+                    }
+
+                    &::placeholder:focus {
+                        color: var(--grey600);
+                    }
+
+                    &:focus,
+                    &:hover {
+                        border: none;
+                        outline: none;
+                        color: var(--grey600);
+                    }
+                }
+
+                button {
+                    width: 3.3125rem;
+                    height: 2.5rem;
+                    background-color: var(--color-primary);
+                    border: .125rem solid var(--color-primary);
+                    border-radius: .5rem;
+                    color: var(--grey0);
+                    margin-right: .625rem;
+                }
+            }
+        }
+    }
+}

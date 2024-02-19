@@ -1,0 +1,71 @@
+.listContainer {
+    width: 18.75rem;
+    height: 21.625rem;
+    border: .125rem solid rgba(224, 224, 224, 1);
+    border-radius: .3125rem;
+
+    &:hover {
+        border: .125rem solid var(--color-primary);
+    }
+
+    .imgDiv {
+        width: 18.6875rem;
+        height: 9.375rem;
+        background-color: var(--grey0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 11.0625rem;
+            height: 11.0625rem;
+        }
+    }
+
+    .textDiv {
+        width: 16.375rem;
+        height: 9.5625rem;
+        margin: 0 auto;
+        padding-top: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-family: var(--font);
+
+        h3 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--grey600);
+        }
+
+        .category {
+            font-size: .75rem;
+            font-weight: 400;
+            color: var(--grey300);
+        }
+
+        .price {
+            font-size: .875rem;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        button {
+            width: 6.625rem;
+            height: 2.5rem;
+            font-size: .875rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 1);
+            background-color: rgba(189, 189, 189, 1);
+            border: .125rem solid rgba(189, 189, 189, 1);
+            border-radius: .5rem;
+
+            &:hover {
+                background-color: var(--color-primary);
+                border: .125rem solid rgba(39, 174, 96, 1);
+            }
+        }
+    }
+}

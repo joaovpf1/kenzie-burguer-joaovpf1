@@ -1,0 +1,17 @@
+.containerList {
+    width: clamp(18.75rem, 85.5rem, 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+    overflow-x: auto;
+    margin: 1.25rem auto;
+    padding-left: .625rem;
+
+    @media (min-width: 46.875rem) {
+        display: flex;
+        flex-direction: wrap;
+        flex-wrap: wrap;
+        gap: 2.8125rem;
+    }
+}
